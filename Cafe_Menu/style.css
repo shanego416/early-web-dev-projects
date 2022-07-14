@@ -20,7 +20,7 @@ body {
   
   h1, h2, p {
     text-align: center;
-    color: #465e27;
+    color: #2f3f1a;
   }
   
   .menu {
@@ -62,9 +62,14 @@ body {
 
   }
   
-  .food, .drinks {
+  .food, .drinks, .description {
     text-align: left;
     width: 75%;
+  }
+
+  .description {
+    margin-top: 0%;
+    font-style: italic;
   }
   
   .price {
