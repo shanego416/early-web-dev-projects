@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1 id="title">For The Love of Nature Survey</h1>
+        <p id="description">A quick survey to tell us about your relationship with nature!</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label">Name <input id="name" type="text" placeholder="Your name" required/></label>
+                <label id="email-label">Email <input id="email" type="email" placeholder="Your email" required /></label>
+                <label id="number-label">Age <input id="number" type="number" min="5" max="120" placeholder="Your age" required/></label>
+            </fieldset>
+            <fieldset>
+                <label>How much would you say you like being outdoors?</label>
+                <select id="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">I'm staying inside with the blinds closed!</option>
+                    <option value="2">I take walks fromtime to time.</option>
+                    <option value="3">Most of my free time is spent outdoors.</option>
+                    <option value="4">I pretty much live in the woods.</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label>Do you think there are benefits to spending time in nature?</label>
+                <label><input type="radio" name="benefits" class="inline" value="absolutely"/> Absolutely</label>
+                <label><input type="radio" name="benefits" class="inline" value="probably"/> Probably</label>
+                <label><input type="radio" name="benefits" class="inline" value="no"/> Nature is for hippies and birds</label>
+                <label><input type="radio" name="benefits" class="inline" value="notsure"/> Not sure</label>
+            </fieldset>
+            <fieldset>
+                <label>Where do your prefer to spend your time out doors?</label>
+                <label><input type="checkbox" value="beach" class="inline" />The beach</label>
+                <label><input type="checkbox" value="woods" class="inline" />The woods</label>
+                <label><input type="checkbox" value="jungle" class="inline" />The jungle</label>
+                <label><input type="checkbox" value="desert" class="inline" />The desert</label>
+                <label><input type="checkbox" value="wifi" class="inline" />Anywhere there's Wi-Fi</label>
+                <label><input type="checkbox" value="pool" class="inline" />Somewhere by a pool</label>
+                <label><input type="checkbox" value="mountain" class="inline" />On a mountain</label>
+                <label><input type="checkbox" value="bar" class="inline" />Anywhere there's a bar</label>
+                <label><input type="checkbox" value="ocean" class="inline" />The ocean</label>
+                <label><input type="checkbox" value="boat" class="inline" />On a boat</label>
+                <label><input type="checkbox" value="cave" class="inline" />In a caves</label>
+            </fieldset>
+            <fieldset>
+                <label>Comments or suggestions:
+                    <textarea name="comments" rows="8" cols="30" placeholder="Add your comments here..."></textarea>
+                </label>
+            </fieldset>
+        <input id="submit" type="submit" value="Submit" />    
+        </form>
+    </body>
+</html>
